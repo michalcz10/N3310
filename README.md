@@ -1,2 +1,2 @@
 # SHPC
-ahoj
+Nokia ve hře
