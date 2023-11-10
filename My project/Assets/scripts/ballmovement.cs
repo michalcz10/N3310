@@ -34,7 +34,7 @@ public class ballmovement : MonoBehaviour
     private void ResetBall() 
     {
         rb.velocity = new Vector2(0, 0);
-        transform.position = new Vector2(0, 90.5026f);
+        transform.position = new Vector2(0, 0);
         Invoke("StartBall", 2f);
     }
 
