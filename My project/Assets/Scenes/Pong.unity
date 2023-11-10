@@ -431,8 +431,8 @@ Transform:
   m_GameObject: {fileID: 537611385}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.17566688, y: 0.28569356, z: 0}
+  m_LocalPosition: {x: -0.0005, y: 0, z: 0}
+  m_LocalScale: {x: 0.08889822, y: 0.15095276, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1035146812}
@@ -563,8 +563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a708da044f188441ad9159da3d9ff66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSpeed: 75
-  speedIncrease: 1
+  initialSpeed: 100
+  speedIncrease: 5
   playerScore: {fileID: 994488643}
   AIScore: {fileID: 1019474433}
 --- !u!1 &564382984
@@ -922,6 +922,8 @@ Transform:
   - {fileID: 1330010727}
   - {fileID: 1090791359}
   - {fileID: 1651207686}
+  - {fileID: 1718720411}
+  - {fileID: 1550707347}
   - {fileID: 147652059}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1024,7 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55479136d4ce9174baff9c18ef73356d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 50
+  movementSpeed: 100
   isAI: 0
   ball: {fileID: 537611385}
 --- !u!50 &1090791361
@@ -1370,12 +1372,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550707345}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.30002, y: -1.7000198, z: -2.2329257}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.42027068, y: 0.0009062327, z: 0}
+  m_LocalScale: {x: 0.0052744816, y: 0.0090623265, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1035146812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1595227772
 GameObject:
@@ -1508,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55479136d4ce9174baff9c18ef73356d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 25
+  movementSpeed: 50
   isAI: 1
   ball: {fileID: 537611385}
 --- !u!61 &1651207688
@@ -1705,12 +1707,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718720409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.44003, y: -1.7000198, z: -2.2329257}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.42027068, y: -0.015406135, z: 0}
+  m_LocalScale: {x: 0.0052744816, y: 0.0090623265, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1035146812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -1721,5 +1723,3 @@ SceneRoots:
   - {fileID: 564382987}
   - {fileID: 1035146812}
   - {fileID: 581695477}
-  - {fileID: 1718720411}
-  - {fileID: 1550707347}
