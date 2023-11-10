@@ -35,12 +35,13 @@ public class ballmovement : MonoBehaviour
     {
         rb.velocity = new Vector2(0, 0);
         transform.position = new Vector2(0, 0);
+        hitCounter= 0;
         Invoke("StartBall", 2f);
     }
 
     private void PlayerBounce(Transform myObject)
     {
-        hitCounter++;
+        if(hitCounter < 10) hitCounter++;
 
         Vector2 ballpos = transform.position;
         Vector2 playerPos = myObject.position;
