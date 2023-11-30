@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 playerMove;
 
+    private bool isButtonHeld = false;
+
 
 
     void Start()
@@ -24,15 +26,27 @@ public class PlayerMovement : MonoBehaviour
         {
             AIControl();
         }
-        else
-        {
-            PlayerControl();
-        }
     }
 
-    private void PlayerControl()
+    public void MoveUp()
     {
-        playerMove = new Vector2(0, Input.GetAxisRaw("Vertical"));
+        if (!isAI && isButtonHeld) { playerMove = new Vector2(0, 1f); }
+        else { playerMove = new Vector2(0, 0); }
+    }
+    public void MoveDown()
+    {
+        if (!isAI && isButtonHeld) { playerMove = new Vector2(0, -1f); }
+        else { playerMove = new Vector2(0, 0); }
+    }
+
+    public void OnButtonDown()
+    {
+        isButtonHeld = true;
+    }
+
+    public void OnButtonUp()
+    {
+        isButtonHeld = false;
     }
 
     private void AIControl()
