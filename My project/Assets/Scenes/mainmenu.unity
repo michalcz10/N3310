@@ -551,6 +551,7 @@ GameObject:
   - component: {fileID: 905172606}
   - component: {fileID: 905172605}
   - component: {fileID: 905172604}
+  - component: {fileID: 905172607}
   m_Layer: 0
   m_Name: Pong-button
   m_TagString: Untagged
@@ -622,7 +623,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2021654316}
-        m_TargetAssemblyTypeName: loadscene, Assembly-CSharp
+        m_TargetAssemblyTypeName: LoadPong, Assembly-CSharp
         m_MethodName: LoadSceneByName
         m_Mode: 1
         m_Arguments:
@@ -671,6 +672,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905172602}
   m_CullTransparentMesh: 1
+--- !u!114 &905172607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905172602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53259d7012a7b5349876fc1946bbcc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &971387875
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,12 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class loadscene : MonoBehaviour
+public class LoadMainMenu : MonoBehaviour
 {
 
     public void LoadSceneByName()
     {
-        SceneManager.LoadScene("Pong");
+        SceneManager.LoadScene("mainmenu");
     }
-
+    void Start()
+    {
+        SceneManager.LoadScene("mainmenu");
+    }
 }
