@@ -11,8 +11,4 @@ public class LoadMainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("mainmenu");
     }
-    void Start()
-    {
-        SceneManager.LoadScene("mainmenu");
-    }
 }
