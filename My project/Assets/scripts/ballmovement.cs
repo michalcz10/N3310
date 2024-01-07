@@ -13,6 +13,9 @@ public class ballmovement : MonoBehaviour
     private int hitCounter;
     private Rigidbody2D rb;
 
+    public AudioSource source;
+    public AudioClip PlayerHit;
+    public AudioClip Scored;
 
 
     void Start()
@@ -68,6 +71,7 @@ public class ballmovement : MonoBehaviour
     {
         if(collision.gameObject.name == "Player" || collision.gameObject.name == "AI")
         {
+            source.PlayOneShot(PlayerHit);
             PlayerBounce(collision.transform);
         }
     }
@@ -77,11 +81,13 @@ public class ballmovement : MonoBehaviour
     {
         if(transform.position.x > 0)
         {
+            source.PlayOneShot(Scored);
             ResetBall();
             playerScore.text = (int.Parse(playerScore.text) + 1).ToString();
         }
         else if(transform.position.x < 0)
         {
+            source.PlayOneShot(Scored);
             ResetBall();
             AIScore.text = (int.Parse(AIScore.text) + 1).ToString();
         }
