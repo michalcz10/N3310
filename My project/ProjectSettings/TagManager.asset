@@ -6,6 +6,9 @@ TagManager:
   tags:
   - CollisionTag
   - Music
+  - Food
+  - Snake
+  - Wall
   layers:
   - Default
   - TransparentFX

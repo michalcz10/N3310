@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/mainmenu.unity
     guid: ba1946a473bc41441b3071740a462598
   - enabled: 1
-    path: Assets/Scenes/Pong.unity
-    guid: f318c42faf4e80247bba948e9dc5338c
-  - enabled: 1
     path: Assets/Scenes/mainmenu-Pong.unity
     guid: 3376e1d26bd65cf4b89d5d2e295a174d
   - enabled: 1
     path: Assets/Scenes/mainmenu-Snake.unity
     guid: f19c21bf5e1bbba45bbcd65b8b9c9ea6
+  - enabled: 1
+    path: Assets/Scenes/Pong.unity
+    guid: f318c42faf4e80247bba948e9dc5338c
   m_configObjects: {}
