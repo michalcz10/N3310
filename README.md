@@ -18,3 +18,4 @@ Matěj Navrkal - Grafický designer , Webmaster
 Vojtěch Remer - PR manažer , Tester
 
 ##Kontakt
+n3310game@seznam.cz
