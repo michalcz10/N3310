@@ -16,6 +16,7 @@ public class ballmovement : MonoBehaviour
     public AudioSource source;
     public AudioClip PlayerHit;
     public AudioClip Scored;
+    public AudioClip ScoreEster;
 
 
     void Start()
@@ -39,6 +40,10 @@ public class ballmovement : MonoBehaviour
         rb.velocity = new Vector2(0, 0);
         transform.position = new Vector2(2.8f, 12.2f);
         hitCounter= 0;
+        if(int.Parse(playerScore.text) == 6 && int.Parse(AIScore.text) == 9)
+        {
+            source.PlayOneShot(ScoreEster);
+        }
         Invoke("StartBall", 2f);
     }
 
@@ -82,14 +87,14 @@ public class ballmovement : MonoBehaviour
         if(transform.position.x > 0)
         {
             source.PlayOneShot(Scored);
-            ResetBall();
             playerScore.text = (int.Parse(playerScore.text) + 1).ToString();
+            ResetBall();
         }
         else if(transform.position.x < 0)
         {
             source.PlayOneShot(Scored);
-            ResetBall();
             AIScore.text = (int.Parse(AIScore.text) + 1).ToString();
+            ResetBall();
         }
     }
 
